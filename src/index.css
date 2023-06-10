@@ -10,7 +10,7 @@ body {
   margin: 0 24px;
   min-height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -38,7 +38,46 @@ p {
   font-weight: 400;
 }
 
-.small-text{
+.App {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.small-text {
   font-size: 12px;
   font-weight: 400;
+}
+
+/* ? RESPONSIVE DESIGN */
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }
