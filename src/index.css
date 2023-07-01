@@ -38,6 +38,18 @@ p {
   font-weight: 400;
 }
 
+button{
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: 2px 4px;
+  padding: 2px;
+}
+button:hover{
+  background-color: rgb(228, 224, 224);
+  cursor: pointer;
+}
+
 .App {
   display: flex;
   flex-direction: row;
@@ -49,6 +61,14 @@ p {
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.movie-cart{
+  padding: 8px 12px;
+  margin: 4px 6px;
+  border: 1px solid black;
+  border-radius: 12px;
+  width: 270px;
 }
 
 .small-text {

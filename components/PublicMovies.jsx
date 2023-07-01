@@ -1,11 +1,12 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import MovieCart from "./MovieCart";
 
 const PublicMovies = () => {
   const publicMovies = useSelector((store) => store.public);
 
   const renderMovies = publicMovies.map((movie) => (
-    <h3 key={movie.id}>{movie.name}</h3>
+    <MovieCart key={movie.id} name={movie.name} />
   ));
 
   return (
